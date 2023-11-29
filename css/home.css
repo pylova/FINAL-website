@@ -207,4 +207,51 @@ ul.menu li.selected {
   .box2 {
     width: 100%;
   }
+  .home-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: flex-start;
+    padding-top: var(--dl-space-space-unit);
+    border-color: var(--dl-color-gray-black);
+    border-width: 1px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .home-container1 {
+    width: 239px;
+    height: 298px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color:  rgb(251, 205, 19);
+  }
+  .home-image {
+    width: 200px;
+    object-fit: cover;
+  }
+  .home-container2 {
+    flex: 0 0 auto;
+    width: 1004px;
+    height: 301px;
+    display: flex;
+    align-self: flex-start;
+    align-items: flex-start;
+    margin-right: 0px;
+    padding-left: 42px;
+    padding-right: var(--dl-space-space-halfunit);
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #1442fc;
+  }
+  @media(max-width: 479px) {
+    .home-container {
+      align-items: center;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+  
 }
