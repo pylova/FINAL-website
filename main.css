@@ -18,3 +18,27 @@ img
   height: 250px;
   width: 400px;
 }
+ul.menu {
+  border-style: solid;
+  border-width: 1px;
+  padding: 0em;
+  border-radius: 0.5em;
+  background-color: #1442fc;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.menu li {
+  display: inline-block;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+ul.menu li a {
+  color: white;
+  text-decoration: none;
+}
+ul.menu li.selected {
+  color: rgb(252, 206, 20);
+}
