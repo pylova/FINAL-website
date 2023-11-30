@@ -38,7 +38,7 @@
  display: flex;
  flex-wrap: wrap;
  justify-content: space-around;
- margin-top: 10vh;
+ margin-top: 8vh;
  height: auto;
  width: auto;
  align-content: flex-start;
@@ -57,7 +57,7 @@
 .column {
   float: left;
   height: auto;
-  padding: 5px;
+  padding: 1px;
 }
 
 /* Clearfix (clear floats) */

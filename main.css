@@ -42,3 +42,43 @@ ul.menu li a {
 ul.menu li.selected {
   color: rgb(252, 206, 20);
 }
+
+#translate-button
+{
+  border: 0;
+  background-color: #1442fc;
+  color: white;
+  padding: 0.5em 1em;
+  font-family: 'Playpen Sans';
+}
+#div1,
+#div2 {
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  font-weight: bold;
+  position: relative;
+}
+
+
+#div1 {
+  animation-timing-function: ease-out;
+  animation: mymoveFromLeft 1s;
+  animation-fill-mode: forwards;
+}
+#div2 {
+  animation-timing-function: ease-in-out;
+  animation: mymoveFromRight 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mymoveFromLeft
+{
+  from {left: 0%;}
+  to {left: 25%;}
+}
+
+@keyframes mymoveFromRight {
+  from {left: 100%;}
+  to {left: 55%;}
+}
