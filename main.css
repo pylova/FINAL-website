@@ -51,34 +51,62 @@ ul.menu li.selected {
   padding: 0.5em 1em;
   font-family: 'Playpen Sans';
 }
-#div1,
-#div2 {
-  width: 100px;
-  height: 50px;
-  background-color: red;
-  font-weight: bold;
-  position: relative;
-}
 
-
-#div1 {
-  animation-timing-function: ease-out;
-  animation: mymoveFromLeft 1s;
-  animation-fill-mode: forwards;
-}
-#div2 {
-  animation-timing-function: ease-in-out;
-  animation: mymoveFromRight 1s;
-  animation-fill-mode: forwards;
-}
 
 @keyframes mymoveFromLeft
 {
   from {left: 0%;}
-  to {left: 25%;}
+  to {left: 20%;}
 }
 
 @keyframes mymoveFromRight {
   from {left: 100%;}
   to {left: 55%;}
+}
+
+
+
+
+.sights {
+  overflow: hidden;
+}
+
+.sights-item {
+  position: relative;
+  height: 20rem;
+  overflow: hidden;
+}
+
+.sights-item-image {
+  position: absolute;
+  animation-timing-function: ease-in-out;
+  animation: mymoveFromLeft 6s;
+  animation-fill-mode: forwards;
+}
+
+.sights-item-image img {
+  height: 100%;
+}
+
+.sights-item-text {
+  position: absolute;
+  animation-timing-function: ease-in-out;
+  animation: mymoveFromRight 6s;
+  animation-fill-mode: forwards;
+  font-family: 'Playpen Sans';
+    margin: 0;
+    font-size: 55px;
+    padding: 3px;
+    color: rgb(252, 206, 20);
+    -webkit-text-stroke: 3px rgb(99, 93, 255);
+}
+
+.sights-item:nth-child(2n) .sights-item-image {  
+  animation: mymoveFromRight 6s;
+  animation-fill-mode: forwards;
+}
+
+.sights-item:nth-child(2n) .sights-item-text {  
+  animation: mymoveFromLeft 6s;
+  animation-fill-mode: forwards;
 }
