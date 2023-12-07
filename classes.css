@@ -32,4 +32,41 @@
     -webkit-text-stroke: 0.2px rgb(99, 93, 255);
   }
 
-  
+  .tickets {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.ticket {
+    text-align: center;
+}
+
+.ticket p {
+    margin: 0;
+}
+
+.cart {
+    margin-top: 20px;
+}
+
+/* Add your existing styles here */
+
+/* Additional styles for the shopping cart */
+#cart-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-total {
+    font-weight: bold;
+    color: #1442fc;
+}
