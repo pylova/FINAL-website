@@ -10,9 +10,27 @@
 	<link type="text/css" rel="stylesheet" href="containers.css"/>
 	<meta charset="utf-8"/>
 	<style> 
-
+		/* Ensure ad container has explicit dimensions to prevent layout shifting and collapsing */
+		.ad-slot-728x90 {
+			min-width: 728px;
+			min-height: 90px;
+			margin: 20px auto; /* Adds margin and centers the ad */
+			text-align: center;
+		}
 	</style>	
 	<script src="./script.js"></script>
+
+	<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+	<script>
+	  window.googletag = window.googletag || {cmd: []};
+	  googletag.cmd.push(function() {
+	    // Define your 728x90 ad slot with the specific ID
+	    googletag.defineSlot('/6075/diana_test_web', [728, 90], 'div-gpt-ad-1764842015008-0').addService(googletag.pubads());
+	    
+	    googletag.pubads().enableSingleRequest();
+	    googletag.enableServices();
+	  });
+	</script>
 	</head>
 	<body>
 		<ul class="menu">
@@ -22,138 +40,136 @@
             <li><a href="3-day.html">3-DAY</a></li>
 			<li><a href="contact-us.html">Contact us</a></li>
 		</ul>
+
+		<div id='div-gpt-ad-1764842015008-0' class="ad-slot-728x90">
+			<script>
+				googletag.cmd.push(function() { googletag.display('div-gpt-ad-1764842015008-0'); });
+			</script>
+		</div>
+
 		<div class="yellow-section">
 			<div class="header-container">
 				 <h1 class="header-text">Discover Ukraine</h1>
 				 <h1 class="slogan">Unveil the Beauty in Every Journey!</h1>
 				 <p style="color: black; text-align: left;">
 					 Embark on an extraordinary journey with Discover Ukraine Tours – Your Gateway to the Heart of Eastern Europe!<br>
- 
+ 
 					 <p id="par" style="color: black;">Любіть Україну, як сонце любіть,
 						 як вітер, і трави, і води...
 						 В годину щасливу і в радості мить,
 						 любіть у годину негоди.</p>
- 
- 
- 
+ 
 						 <button type="button" onclick='handleClick()' id="translate-button">Translate</button>
-				 
-						 <!-- <a href="1-day.html">🏰 1-DAY TOUR: Kyiv's Charms Unveiled!</a>
-					 Witness the allure of Kyiv in just one day!
-				 
-					 <br>🌆 2-DAY TOUR: Discover Kyiv and Kharkiv's Hidden Gems!
-				 
-					 <br>🏰 3-DAY TOUR: An Epic Ukrainian Adventure!: Kyiv, Kharkiv, Lviv  -->
 				 </p>
 				</div>
 		 </div>
-	  </div>
+	  </div>
 
 
 
-	  <div class ="flex-container">
+	  <div class ="flex-container">
 		<div class="box">
 			<h1 style="-webkit-text-stroke: 0.6px rgb(252, 206, 20);">1-DAY TOUR</h1>
 			<img src="img/kyiv2.jpg" alt="Image 1">
 			<p><strong>Discover Kyiv's charm in just one day! Join our guided tour for:</strong><br></p>
 			
 			<div class ="flex-container2">
-		  
+		  
 				<div class="box">
-				  
+				  
 					<p class="p11">Day 1 - Kyiv:<br>
-					  🏰 St. Sophia's Cathedral<br>
-					  🌆 Andriyivsky Descent<br>
-					  🍽️ Local Cuisine<br>
-					 
+					  🏰 St. Sophia's Cathedral<br>
+					  🌆 Andriyivsky Descent<br>
+					  🍽️ Local Cuisine<br>
+					 
 					</p>
 					
 				</div>
 				
 				<div class="box">
-				  
-					<p class="p11"> 
-						  Details:<br>
-						  🗓️ Dates: Every Thursday<br>
-						  🕒 Duration: 1 day<br>
-						  🚌 Departure: Kyiv</p>
-						  
+				  
+					<p class="p11"> 
+						  Details:<br>
+						  🗓️ Dates: Every Thursday<br>
+						  🕒 Duration: 1 day<br>
+						  🚌 Departure: Kyiv</p>
+						  
 				</div>
-			  </div>
-		  </div>
-		  
-		  <div class="box">
+			  </div>
+		  </div>
+		  
+		  <div class="box">
 			<h1 style="-webkit-text-stroke: 0.6px rgb(252, 206, 20);">2-DAY TOUR</h1>
 			<img src="img/kharkiv.jpg" alt="Image 2">
 			<p><strong>Explore the best of Ukraine in just 2 days!</strong><br></p>
 			
 			<section class ="flex-container2">
-		  
+		  
 				<div class="box">
-				  
+				  
 					<p class="p11">Day 1 - Kyiv:<br>
-					  🏰 St. Sophia's Cathedral<br>
-					  🌆 Andriyivsky Descent<br>
-					  🍽️ Local Cuisine<br>
-					  <br>
-					  Day 2 - Kharkiv:<br>
-					  🌳 Gorky Park<br>
-					  🎭 Opera & Ballet Theatre<br>
-					  ☕ Sumskaya Street
-					  <p>
+					  🏰 St. Sophia's Cathedral<br>
+					  🌆 Andriyivsky Descent<br>
+					  🍽️ Local Cuisine<br>
+					  <br>
+					  Day 2 - Kharkiv:<br>
+					  🌳 Gorky Park<br>
+					  🎭 Opera & Ballet Theatre<br>
+					  ☕ Sumskaya Street
+					  <p>
 					
 				</div>
 				
 				<div class="box">
-				  
-					<p class="p11"> 
-						  Details:<br>
-						  🗓️ Dates: Every Thursday<br>
-						  🕒 Duration: 3 days<br>
-						  🚌 Departure: Kyiv</p>
+				  
+					<p class="p11"> 
+						  Details:<br>
+						  🗓️ Dates: Every Thursday<br>
+						  🕒 Duration: 3 days<br>
+						  🚌 Departure: Kyiv</p>
 				</div>
-			  </div>
+			  </div>
 			</section>
-		  
-		  <div class="box">
+		  
+		  <div class="box">
 			<h1 style="-webkit-text-stroke: 0.6px rgb(252, 206, 20);">3-DAY TOUR</h1>
 			<img src="img/Lviv.jpg" alt="Image 3">
 			<p>
 				<strong>3-Day Ukraine Adventure: Kyiv, Kharkiv, Lviv</strong> <br></p>
 				
 				<div class ="flex-container2">
-		  
+		  
 					<div class="box">
-					  
+					  
 						<p class="p11">Day 1 - Kyiv:<br>
-						  🏰 St. Sophia's Cathedral<br>
-						  🌆 Andriyivsky Descent<br>
-						  🍽️ Local Cuisine<br>
-						  <br>
-						  Day 2 - Kharkiv:<br>
-						  🌳 Gorky Park<br>
-						  🎭 Opera & Ballet Theatre<br>
-						  ☕ Sumskaya Street
-						  <p>
+						  🏰 St. Sophia's Cathedral<br>
+						  🌆 Andriyivsky Descent<br>
+						  🍽️ Local Cuisine<br>
+						  <br>
+						  Day 2 - Kharkiv:<br>
+						  🌳 Gorky Park<br>
+						  🎭 Opera & Ballet Theatre<br>
+						  ☕ Sumskaya Street
+						  <p>
 						
 					</div>
 					
 					<div class="box">
-					  
+					  
 						<p class="p11"> Day 3 - Lviv:<br>
-							  🏰 Old Town<br>
-							  🏰 Castle Hill<br>
-							  ☕ Coffee Houses<br>
-							  <br>
-							  Details:<br>
-							  🗓️ Dates: Every Thursday<br>
-							  🕒 Duration: 3 days<br>
-							  🚌 Departure: Kyiv</p>
+							  🏰 Old Town<br>
+							  🏰 Castle Hill<br>
+							  ☕ Coffee Houses<br>
+							  <br>
+							  Details:<br>
+							  🗓️ Dates: Every Thursday<br>
+							  🕒 Duration: 3 days<br>
+							  🚌 Departure: Kyiv</p>
 					</div>
-				  </div>
-		  </div>
+				  </div>
+		  </div>
 
-		  <div class="tickets">
+		  <div class="tickets">
 			<div class="ticket" data-id="1">
 				<h2>Event 1 Ticket</h2>
 				<p>Price: $150</p>
@@ -181,10 +197,11 @@
 		</div>
 		</div>
 		<h2>Shopping Cart</h2>
-    <div class="cart">
-        <ul id="cart-items"></ul>
-        <p>Total: $<span id="cart-total">0</span></p>
-    </div>
+    <div class="cart">
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0</span></p>
+    </div>
 
 		
-		</body>
+	</body>
+</html>
